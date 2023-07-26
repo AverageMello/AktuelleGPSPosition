@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aktuelle Position"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="44sp"
+        android:textColor="@color/black"
+        android:id="@+id/ueberschrift"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breitengrad: "
+        android:layout_below="@id/ueberschrift"
+        android:layout_marginTop="150dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:id="@+id/breitengradtext"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/breitengradtext"
+        android:layout_marginTop="209dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/breitengrad"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Längengrad: "
+        android:layout_below="@id/breitengradtext"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:id="@+id/laengengradtext"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breitengrad"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:layout_marginStart="155dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/laengengrad"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/threadstartknopf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="@color/black"
+        android:text="Stoppen"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/starten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="@color/black"
+        android:text="Starten"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+</RelativeLayout>
